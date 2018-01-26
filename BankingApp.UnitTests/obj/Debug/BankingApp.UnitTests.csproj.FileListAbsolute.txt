@@ -1,0 +1,14 @@
+C:\Users\cagat\onedrive\belgeler\visual studio 2017\Projects\BankingApp\BankingApp.UnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\cagat\onedrive\belgeler\visual studio 2017\Projects\BankingApp\BankingApp.UnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\cagat\onedrive\belgeler\visual studio 2017\Projects\BankingApp\BankingApp.UnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\cagat\onedrive\belgeler\visual studio 2017\Projects\BankingApp\BankingApp.UnitTests\bin\Debug\BankingApp.UnitTests.dll
+C:\Users\cagat\onedrive\belgeler\visual studio 2017\Projects\BankingApp\BankingApp.UnitTests\bin\Debug\BankingApp.UnitTests.pdb
+C:\Users\cagat\onedrive\belgeler\visual studio 2017\Projects\BankingApp\BankingApp.UnitTests\bin\Debug\BankingApp.dll
+C:\Users\cagat\onedrive\belgeler\visual studio 2017\Projects\BankingApp\BankingApp.UnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\cagat\onedrive\belgeler\visual studio 2017\Projects\BankingApp\BankingApp.UnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\cagat\onedrive\belgeler\visual studio 2017\Projects\BankingApp\BankingApp.UnitTests\bin\Debug\BankingApp.pdb
+C:\Users\cagat\onedrive\belgeler\visual studio 2017\Projects\BankingApp\BankingApp.UnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\cagat\onedrive\belgeler\visual studio 2017\Projects\BankingApp\BankingApp.UnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\cagat\onedrive\belgeler\visual studio 2017\Projects\BankingApp\BankingApp.UnitTests\obj\Debug\BankingApp.UnitTests.csprojResolveAssemblyReference.cache
+C:\Users\cagat\onedrive\belgeler\visual studio 2017\Projects\BankingApp\BankingApp.UnitTests\obj\Debug\BankingApp.UnitTests.dll
+C:\Users\cagat\onedrive\belgeler\visual studio 2017\Projects\BankingApp\BankingApp.UnitTests\obj\Debug\BankingApp.UnitTests.pdb
