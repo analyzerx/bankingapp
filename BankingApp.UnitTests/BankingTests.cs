@@ -57,7 +57,7 @@ namespace BankingApp.UnitTests
             Assert.AreEqual(0, bank1.Accounts.Count);
 
             //Adding account to bank accounts
-            CheckingAccount acc1 = new CheckingAccount("Ismail Bilgin","ABC1");
+            CheckingAccount acc1 = new CheckingAccount("Ethan Hawk","ABC1");
             bank1.AddAccount(acc1);
 
             //Check the count of accounts in bank after adding initial account
