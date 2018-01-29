@@ -28,7 +28,7 @@ namespace BankingApp.UnitTests
             "Account Number can not be null.")]
         public void NullCheckingAccountNumber_InAccountConstructor_ThrowsException()
         {
-            CheckingAccount acc1 = new CheckingAccount("Ismail Bilgin", null);
+            CheckingAccount acc1 = new CheckingAccount("Ethan Hawk", null);
         }
 
         [TestMethod]
@@ -36,7 +36,7 @@ namespace BankingApp.UnitTests
             "Account Number can not be null.")]
         public void EmptyCheckingAccountNumber_InAccountConstructor_ThrowsException()
         {
-            CheckingAccount acc1 = new CheckingAccount("Ismail Bilgin", "");
+            CheckingAccount acc1 = new CheckingAccount("Ethan Hawk", "");
         }
 
         [TestMethod]
@@ -44,7 +44,7 @@ namespace BankingApp.UnitTests
             "You can not deposit negative amount to your account.")]
         public void DepositNegativeAmount_InCheckingAccount_ThrowsException()
         {
-            CheckingAccount acc1 = new CheckingAccount("Ismail Bilgin", "ABC1");
+            CheckingAccount acc1 = new CheckingAccount("Ethan Hawk", "ABC1");
             // Add some money to account
             acc1.Deposit(-100);
         }
@@ -52,7 +52,7 @@ namespace BankingApp.UnitTests
         [TestMethod]
         public void Deposit_InCheckingAccount_BalanceEqualToDepositAmount()
         {
-            CheckingAccount acc1 = new CheckingAccount("Ismail Bilgin", "ABC1");
+            CheckingAccount acc1 = new CheckingAccount("Ethan Hawk", "ABC1");
             // Add some money to account
             acc1.Deposit(1500m);
             // Check balance
@@ -64,7 +64,7 @@ namespace BankingApp.UnitTests
             "You can not withdraw negative amount from your account.")]
         public void WithdrawNegativeAmount_InCheckingAccount_ThrowsException()
         {
-            CheckingAccount acc1 = new CheckingAccount("Ismail Bilgin", "ABC1");
+            CheckingAccount acc1 = new CheckingAccount("Ethan Hawk", "ABC1");
             // Withdraw some money from account
             acc1.Withdraw(-100);
         }
@@ -74,7 +74,7 @@ namespace BankingApp.UnitTests
             "Minimum Balance Limit is reached. It is not permissible to overdraft an account")]
         public void WithdrawMinBalanceReached_InCheckingAccount_ThrowsException()
         {
-            CheckingAccount acc1 = new CheckingAccount("Ismail Bilgin", "ABC1");
+            CheckingAccount acc1 = new CheckingAccount("Ethan Hawk", "ABC1");
             // Add some money to account
             acc1.Deposit(1000m);
             // Withdraw some money from account
@@ -85,7 +85,7 @@ namespace BankingApp.UnitTests
       
         public void Withdraw_InCheckingAccount_BalanceEq500()
         {
-            CheckingAccount acc1 = new CheckingAccount("Ismail Bilgin", "ABC1");
+            CheckingAccount acc1 = new CheckingAccount("Ethan Hawk", "ABC1");
 
             // Add some money to account
             acc1.Deposit(1500m);
@@ -103,7 +103,7 @@ namespace BankingApp.UnitTests
         public void TransferNegativeAmount_InCheckingAccount_ThrowsException()
         {
             // Create source and destination accounts
-            CheckingAccount source = new CheckingAccount("Ismail Bilgin", "ABC1");
+            CheckingAccount source = new CheckingAccount("Ethan Hawk", "ABC1");
 
             CheckingAccount dest = new CheckingAccount("Jay Hawkins", "ABC2");
 
@@ -121,7 +121,7 @@ namespace BankingApp.UnitTests
         public void TransferToUnknownAcc_InCheckingAccount_ThrowsException()
         {
             // Create source and destination accounts
-            CheckingAccount source = new CheckingAccount("Ismail Bilgin", "ABC1");
+            CheckingAccount source = new CheckingAccount("Ethan Hawk", "ABC1");
 
             // Add some money to source account
             source.Deposit(3000m);
@@ -135,7 +135,7 @@ namespace BankingApp.UnitTests
         public void TransferAmount_InCheckingAccount_ThrowsException()
         {
             // Create source and destination accounts
-            CheckingAccount source = new CheckingAccount("Ismail Bilgin", "ABC1");
+            CheckingAccount source = new CheckingAccount("Ethan Hawk", "ABC1");
 
             CheckingAccount dest = new CheckingAccount("Jay Hawkins", "ABC2");
 
