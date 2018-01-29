@@ -27,7 +27,7 @@ namespace BankingApp.UnitTests
             "Account Number can not be null.")]
         public void NullCorpInvestmentAccNumber_InAccountConstructor_ThrowsException()
         {
-            CorpInvestmentAccount acc1 = new CorpInvestmentAccount("Ismail Bilgin", null);
+            CorpInvestmentAccount acc1 = new CorpInvestmentAccount("Ethan Hawk", null);
         }
 
         [TestMethod]
@@ -35,7 +35,7 @@ namespace BankingApp.UnitTests
             "Account Number can not be null.")]
         public void EmptyCorpInvestmentAccNumber_InAccountConstructor_ThrowsException()
         {
-            CorpInvestmentAccount acc1 = new CorpInvestmentAccount("Ismail Bilgin", "");
+            CorpInvestmentAccount acc1 = new CorpInvestmentAccount("Ethan Hawk", "");
         }
 
         [TestMethod]
@@ -43,7 +43,7 @@ namespace BankingApp.UnitTests
             "You can not deposit negative amount to your account.")]
         public void DepositNegativeAmount_InCorpInvestmentAcc_ThrowsException()
         {
-            CorpInvestmentAccount acc1 = new CorpInvestmentAccount("Ismail Bilgin", "ABC1");
+            CorpInvestmentAccount acc1 = new CorpInvestmentAccount("Ethan Hawk", "ABC1");
             // Add some money to account
             acc1.Deposit(-100);
         }
@@ -51,7 +51,7 @@ namespace BankingApp.UnitTests
         [TestMethod]
         public void Deposit_InCorpInvestmentAcc_BalanceEqualToDepositAmount()
         {
-            CorpInvestmentAccount acc1 = new CorpInvestmentAccount("Ismail Bilgin", "ABC1");
+            CorpInvestmentAccount acc1 = new CorpInvestmentAccount("Ethan Hawk", "ABC1");
             // Add some money to account
             acc1.Deposit(1500m);
             // Check balance
@@ -63,7 +63,7 @@ namespace BankingApp.UnitTests
             "You can not withdraw negative amount from your account.")]
         public void WithdrawNegativeAmount_InCorpInvestmentAcc_ThrowsException()
         {
-            CorpInvestmentAccount acc1 = new CorpInvestmentAccount("Ismail Bilgin", "ABC1");
+            CorpInvestmentAccount acc1 = new CorpInvestmentAccount("Ethan Hawk", "ABC1");
             // Withdraw some money from account
             acc1.Withdraw(-100);
         }
@@ -73,7 +73,7 @@ namespace BankingApp.UnitTests
             "Minimum Balance Limit is reached. It is not permissible to overdraft an account")]
         public void WithdrawMinBalanceReached_InCorpInvestmentAcc_ThrowsException()
         {
-            CorpInvestmentAccount acc1 = new CorpInvestmentAccount("Ismail Bilgin", "ABC1");
+            CorpInvestmentAccount acc1 = new CorpInvestmentAccount("Ethan Hawk", "ABC1");
             // Add some money to account
             acc1.Deposit(1000m);
             // Withdraw some money from account
@@ -84,7 +84,7 @@ namespace BankingApp.UnitTests
 
         public void Withdraw_InCorpInvestmentAcc_BalanceEq500()
         {
-            CorpInvestmentAccount acc1 = new CorpInvestmentAccount("Ismail Bilgin", "ABC1");
+            CorpInvestmentAccount acc1 = new CorpInvestmentAccount("Ethan Hawk", "ABC1");
 
             // Add some money to account
             acc1.Deposit(1500m);
@@ -102,7 +102,7 @@ namespace BankingApp.UnitTests
         public void TransferNegativeAmount_InCorpInvestmentAcc_ThrowsException()
         {
             // Create source and destination accounts
-            CorpInvestmentAccount source = new CorpInvestmentAccount("Ismail Bilgin", "ABC1");
+            CorpInvestmentAccount source = new CorpInvestmentAccount("Ethan Hawk", "ABC1");
 
             CorpInvestmentAccount dest = new CorpInvestmentAccount("Jay Hawkins", "ABC2");
 
@@ -120,7 +120,7 @@ namespace BankingApp.UnitTests
         public void TransferToUnknownAcc_InCorpInvestmentAcc_ThrowsException()
         {
             // Create source and destination accounts
-            CorpInvestmentAccount source = new CorpInvestmentAccount("Ismail Bilgin", "ABC1");
+            CorpInvestmentAccount source = new CorpInvestmentAccount("Ethan Hawk", "ABC1");
 
             // Add some money to source account
             source.Deposit(3000m);
@@ -134,7 +134,7 @@ namespace BankingApp.UnitTests
         public void TransferAmount_InCorpInvestmentAcc_ThrowsException()
         {
             // Create source and destination accounts
-            CorpInvestmentAccount source = new CorpInvestmentAccount("Ismail Bilgin", "ABC1");
+            CorpInvestmentAccount source = new CorpInvestmentAccount("Ethan Hawk", "ABC1");
 
             CorpInvestmentAccount dest = new CorpInvestmentAccount("Jay Hawkins", "ABC2");
 
